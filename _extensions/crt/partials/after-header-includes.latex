@@ -1,0 +1,27 @@
+
+\JournalInfo{$jornalinfo$}
+\Archive{$admunit$}
+\PaperTitle{$title$}
+
+\Authors{
+$for(authors)$
+    $it.name.literal$
+    $if(it.orcid)$
+        \orcidlink{$it.orcid$}~%
+    $endif$
+    \textsuperscript{$for(it.affiliations)$$it.ref$$sep$, $endfor$~%
+    $if(it.attributes.corresponding)$
+        ,*~%
+    $endif$}
+$endfor$
+}
+
+$for(affiliations)$
+\affiliation{\textsuperscript{$it.number$}\textit{$it.name$}}
+$endfor$
+\affiliation{*~\textbf{$email.stringcontato$} $email.emailcontato$} % Corresponding author
+
+\Abstract{$abstract$}
+
+\Keywords{$for(keywords)$$keywords$ - $endfor$}
+\newcommand{\keywordname}{$keywordname$}

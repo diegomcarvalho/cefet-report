@@ -1,181 +1,159 @@
 ---
-title: "Demo aft format to use as template"
-format:
-  aft-pdf:
-    keep-tex: true  
-  aft-html: default
+title: "Mapeamento, Validação e Classificação de Processos Institucionais"
+lang: pt
+region: BR
+date: "Fevereiro 2026"
+jornalinfo: "Cefet/RJ, DIGES, PRJ, 2026"
+admunit: Diretoria de Gestão Estratégica
+abstract: A gestão por processos é um elemento central da governança institucional prevista nas Diretrizes de Mapeamento de Processos do Cefet/RJ, que estabelecem conceitos, hierarquia, responsabilidades e requisitos mínimos para o mapeamento com BPMN, em modelos _as-is_ e _to-be_. A Norma de Mapeamento e Validação complementa esse marco, definindo a equipe mínima, as etapas de validação e os critérios de qualidade sintática, semântica e pragmática para modelos de processos de negócio no Cefet/RJ.
+keywordname: "Palavras-chave"
+keywords:
+  - Mapeamento de processos
+  - Gestão de Processos
+  - Engenharia de Métodos
 author:
-  - name: John Doe
+  - name: Diego Carvalho
+    orcid: 0000-0003-1592-6327
     affiliations:
-      - name: Dummy org
-        department: Cool Dep
-        address: Somewhere
-        city: Magic city
-        country: best one
-        postal-code: 9999
-      - Demo Journal
-    orcid: 0000-0000-0000-0000
-    email: JD@example.org
-    url: https://example.org/
-  - name: his friend
+      - ref: 1
+      - ref: 2
+    current-address: "Avenida Maracanã, 229 - Maracanã, Rio de Janeiro, RJ"
+    corresponding: true
+    email: diego.carvalho@cefet-rj.br
+  - name: Paula Michelle Purcidonio
     affiliations:
-      - Another Affiliation
-abstract: |
-  This document is only a demo explaining how to use the template.
-keywords: [template, demo]
-reference-section-title: References
-bibliography: bibliography.bib  
+      - ref: 3
+      - ref: 2
+  - name: Maria Clara Lippi
+    affiliations:
+      - ref: 2
+email:
+  ref: 1
+  stringcontato: "Contato: "
+  emailcontato: diego.carvalho@cefet-rj.br
+format:
+  crt-pdf:
+    keep-tex: false
+    classoption: [fleqn, 11pt, twocolumn]
+    bibliography: bibliography.bib
+
+affiliations:
+  - id: 1
+    name: Diretoria de Gestão Estratégica - DIGES/Cefet/RJ
+#    city: Rio de Janeiro
+#    state: RJ
+#    country: Brasil
+  - id: 2
+    name: Coordenação de Engenharia de Produção - CCEPRO/DEPES/DIREN/Cefet/RJ
+#    city: Rio de Janeiro
+#    state: RJ
+#    country: Brasil
+  - id: 3
+    name: Departamento de Desenvolvimento Institucional - DEDIN/DIGES/Cefet/RJ
+#    city: Rio de Janeiro
+#    state: RJ
+#    country: Brasil
 ---
 
-## Introduction {#sec-intro}
-
-This is a dummy example only for the purpose to use this repo as a template starter for creating new formats.  For this `article-format-template` we call our dummy article `aft`. 
-
-This quarto extension format supports PDF and HTML outputs. `quarto-journals` is aiming at porting existing {{< latex >}} template from journals to be used with quarto. PDF format is what require the most work to fit the journals guideline, but Quarto offer a nice rendering for HTML output too. This demo format template only use basic HTML format without any customization for now.
-
-## About Quarto Extensions formats And Quarto Journals Article
-
-First, please get familiar with the following resources: 
-
-- [Creating Formats](https://quarto.org/docs/extensions/formats.html) in Quarto as part of the [Extensions](https://quarto.org/docs/extensions/) mechanism.
-- [Journals Articles](https://quarto.org/docs/journals/) for Quarto.
-
-## Structure of this repository
-
-Everything for the extensions is in `_extensions`. See Quarto doc for details. 
-
-- In `partials`, you'll find the `.tex` partials that can be used and should be removed or tweaked,s
-
-- Your extension can make shortcodes and lua filters available. This document shows the effect of the one provided in the `aft` format. 
-
-- `aft` format sets some defaults which are different from `pdf` or `html`, link setting links to URL in read inside PDF output.
-
-Source repository for this template format can found on [Github](https://github.com/quarto-journals/article-format-template)
+# Justificativa
+A gestão por processos é um elemento central da governança institucional prevista nas Diretrizes de Mapeamento de Processos do Cefet/RJ, que estabelecem conceitos, hierarquia, responsabilidades e requisitos mínimos para o mapeamento com BPMN, em modelos as-is e to-be. A Norma de Mapeamento e Validação complementa esse marco, definindo a equipe mínima, as etapas de validação e os critérios de qualidade sintática, semântica e pragmática para modelos de processos de negócio.
 
 
-### `_extensions\aft` 
+Apesar desse arcabouço normativo, a instituição ainda apresenta heterogeneidade no grau de mapeamento de seus macroprocessos e processos, com lacunas de cobertura, desatualização dos fluxos e ausência de classificação sistemática por natureza (finalísticos, de suporte e de gestão), o que dificulta a priorização, a alocação de recursos e a integração entre as unidades. A criação de uma equipe de extensão dedicada ao levantamento, mapeamento, validação e classificação de processos contribui diretamente para o fortalecimento da governança, da transparência procedimental e da melhoria da qualidade dos serviços prestados à comunidade acadêmica e à sociedade.
 
-In this folder you'll find everything that defines the extensions which could be installed using `quarto install extension` or be part of the template when using `quarto use template`
 
-Format Metadata
-  ~ This is in `_extension.yml` is where all the metadata about the format are defined so that Quarto knows what to use.
-  Adapt this file for you own template.
 
-Partials
-  ~ In `partials`, there are the `.tex` files that will be used as Pandoc's template. We provide here all the partials supported by Quarto and custom one for this format. Quarto allows to provide partials to ease the process of tweaking the default latex Pandoc's template and keeping it up to date.  
-    This template repo contains all the relevant partials that you can use with Quarto _as example_. We only tweaked `title.tex` to show the usage of a custom partials called `_custom.tex`.  
-    **Only keep the partials that you need to tweak for the format you are creating**
+# Objetivo
+## Objetivo geral
 
-    If you need to completely change the default template (i.g customizing partials is not enough), then you need to provide your own template to Pandoc based on [`template.tex`](https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/formats/pdf/pandoc/template.tex) and also using partials or not. This can be provided using the `template` YAML key in `_extension.yml` for Quarto to use it. 
+Constituir e consolidar uma equipe de extensão responsável por identificar, mapear, validar e classificar os processos institucionais do Cefet/RJ, em conformidade com as Diretrizes de Mapeamento de Processos e com a Norma de Mapeamento e Validação de Processos de Negócio, ambas aprovadas pelo Comitê de Governança, Desenvolvimento Digital, Controle e Riscos, contribuindo para o fortalecimento da governança e da eficácia institucional.
 
-    This is considered advanced configuration as it will be harder to maintain than only using partials but could be required for some specific format. Be aware that this may lead to loose some Pandoc or Quarto features tied to default `template.tex` content if you remove some specific parts.
+## Objetivos específicos
 
-Lua Filters
-  ~ Most of the time, custom formats will need Lua filters to provide specific features like cross format supports or provides custom shortcodes through the Quarto extension mechanism. Those filters will be available to the user and could be used in the custom formats (according to `_extensions` metadata). 
-    We have provided two examples: 
+Para atender ao Objetivo Geral deste projeto de extensão, temos as etapas operacionais para a constituição e a consolidação de uma equipe dedicada ao levantamento, mapeamento, validação e classificação de processos institucionais, em estrita conformidade com as Diretrizes de Mapeamento de Processos e com a Norma de Mapeamento e Validação de Processos de Negócio do Cefet/RJ. Nesse contexto, listamos, a seguir, os objetivos específicos.
 
-    - `color-text.lua`, a Lua filter used to add color to inline text for PDF and HTML outputs using the same Markdown syntax
-    - `shorcodes.lua`, a Lua filter which follow [Quarto custom shortcodes](https://quarto.org/docs/authoring/shortcodes.html#custom-shortcodes) guidelines to provide a `{{< LaTeX >}}` shortcode to nicely print LaTeX in PDF and HTML. 
+- Revisar e sistematizar o inventário de processos existente, identificando lacunas, redundâncias e inconformidades, e utilizá-lo como base para a modelagem da cadeia de valor institucional.
+- Mapear a cadeia de valor atual e a desejada, alinhadas ao planejamento estratégico, de modo a orientar a organização dos macroprocessos e subsidiar decisões sobre a criação, atualização ou descontinuação de processos.
+- Classificar o inventário de processos à luz da cadeia de valor, categorizando-os quanto à natureza (finalísticos, de suporte, de gestão) e posicionando-os na hierarquia institucional de macroprocessos.
+- Priorizar, validar e modelar processos institucionais, realizando mapeamentos _as-is_ e _to-be_ conforme as normas e diretrizes vigentes, com a participação de especialistas e proprietários de processos.
+- Documentar, homologar e disseminar os resultados, incluindo relatórios técnicos, certificados de validação, registros de classificação e ações de capacitação em gestão de processos e em BPMN.
 
-    **Remove or replace with your own Lua filters**
 
-Format resources
+# Vinculação aos Objetivos de Desenvolvimento Sustentável {toc-title="Vinculação aos ODS"}
 
-  ~ Resources required by the format needs to be available. We have provided two examples: 
+O projeto está vinculado aos seguintes Objetivos de Desenvolvimento Sustentável.
 
-    - `te.bst` is a biblio style file for demo. It has been downloaded from https://www.economics.utoronto.ca/osborne/latex/TEBST.HTM (http://econtheory.org/technical/te.bst) - Licence [LPPL](https://www.latex-project.org/lppl/)
-    - `aft.cls` is a dummy class file for this example format. It is a copy of official `article.cls`, the one provided in LaTeX installation (i.e at `kpsewhich article.cls`) and renamed as example (Licence LaTeX Project Public License)
-    - `custom.scss` is a style file to have a custom theme for our HTML format so that our Lua filter feature `color-tex.lua` works.
+- *ODS principal: ODS 16 – Paz, Justiça e Instituições Eficazes* – O projeto contribui para a meta de "construir instituições eficazes, responsáveis e inclusivas em todos os níveis", ao fortalecer a governança por processos, a clareza das responsabilidades e a transparência dos fluxos internos. Ao garantir modelos de processo validados, documentados e acessíveis, a instituição aprimora sua capacidade de prestar contas e de oferecer serviços mais previsíveis e equitativos à comunidade acadêmica, o que dialoga com a construção de instituições mais íntegras e responsáveis.
+- *ODS complementar (opcional): ODS 9 – Indústria, Inovação e Infraestrutura.* Na medida em que o projeto fomenta a adoção de metodologias de gestão de processos e de infraestrutura de informação mais eficientes, contribui indiretamente para a perspectiva de "desenvolver infraestrutura de qualidade, confiável, sustentável e resiliente", aplicada ao contexto da infraestrutura organizacional e dos processos internos. Caso o edital de extensão permita múltiplas vinculações, essa associação pode ser registrada como secundária.
 
-    Those files are referenced within the `_extension.yml` to be used with our example format.
+# Público-alvo
 
-    **Remove and replace with your own resources**
+O projeto apresenta dois públicos-alvo, a saber:
 
-`.quartoignore`
+- *Interno*: servidores técnico-administrativos e docentes das diretorias sistêmicas e unidades acadêmicas envolvidas em processos de gestão, ensino, pesquisa e extensão, bem como discentes participantes das ações de extensão.
+- *Externo (indireto)*: comunidade atendida pelos serviços do Cefet/RJ, que se beneficia de processos mais claros, eficientes e transparentes.
 
-  ~ Sometimes it is useful to have some files only needed for reference or for development. They should be available in the source repository but not downloaded to the user when `quarto use template` is used.
+# Metodologia resumida
 
-    **Use `.quartoignore` to register such file and folder (one file or folder per line)**
+A metodologia empregada é baseada na apresentada em @dumas2013fundamentals.
 
-`style-guide` folder
+## Constituição da equipe de mapeamento
 
-  ~ For `quarto-journals` format, use `style-guide` folder to include any documentation and resourced used for format creation, like a journal style guide or original `.tex` template. This folder is already added in `.quartoignore` in this example repo.
+A constituição da equipe de mapeamento segue estritamente as disposições da Norma de Mapeamento e Validação de Processos de Negócio, que exige a formação de uma equipe _ad hoc_ para toda atividade de criação, mapeamento e validação de processos. Essa equipe deve ser composta, no mínimo, por um analista de processos — responsável pela modelagem, análise e presidência do grupo — e por especialistas de domínio oriundos das áreas proprietárias do processo, sendo pelo menos um deles da unidade responsável, o que garante conhecimento aprofundado sobre a execução prática das atividades. A indicação dos membros é feita pelo Departamento de Desenvolvimento Institucional, após consulta ao proprietário do processo, assegurando o engajamento das partes interessadas e o alinhamento às responsabilidades definidas nas Diretrizes de Mapeamento de Processos. Essa estrutura promove a integração entre competências técnicas e expertise operacional, facilitando a definição do escopo, a aprovação formal dos modelos validados, a documentação das etapas metodológicas e a submissão dos resultados à homologação institucional.
 
-    **Remove, rename or add to this folder**
+## Fase 1 – Levantamento e validação de processos já mapeados
 
-`template.qmd`
+As atividades iniciais compreendem a realização de um inventário dos modelos de processos já existentes no repositório institucional, acompanhado de análise de aderência às diretrizes vigentes, considerando a hierarquia de processos, a notação adotada e o atendimento aos requisitos mínimos estabelecidos. Na sequência, será conduzida a validação formal desses modelos, mediante a aplicação das quatro etapas previstas — definição de contexto, coleta de informações, modelagem e garantia de qualidade —, culminando na elaboração do Relatório de Validação e do Certificado de Validação, conforme disposto na norma. Por fim, proceder-se-á à classificação dos processos segundo sua natureza (finalísticos primários, de suporte/apoio ou de gestão) e à vinculação aos respectivos macroprocessos institucionais.
 
-  ~ This file is the template document that shows how to use the custom format. It will be downloaded with other resource by `quarto use template`, and even offered to be renamed if the name `template.qmd` is used. 
+## Fase 2 – Identificação e mapeamento de processos não mapeados ou desatualizados
 
-    This file will usually use the custom format (here `aft-pdf` and `aft-html`) and show how to use the template. When you'll copy this template, you should be able to render this document to the demo format. 
+As atividades previstas incluem o levantamento, junto às unidades, de processos críticos que ainda não possuam modelo ou que apresentem modelos desatualizados, com o devido registro de seu escopo e de seus respectivos proprietários. Em seguida, será realizada a coleta de informações por meio de análise documental, observação direta, entrevistas, workshops colaborativos ou descoberta automatizada, conforme as opções previstas na Norma. A partir desses insumos, proceder-se-á à modelagem _as-is_ em BPMN, seguindo as etapas de identificação de limites, atividades, recursos, fluxo de controle e elementos adicionais, bem como, quando pertinente, à análise e construção de modelos _to-be_, com a definição de indicadores. Por fim, será realizada a validação formal, contemplando as dimensões de qualidade sintática, semântica e pragmática, com emissão de relatório e de certificação, além do registro dos modelos em repositório institucional.
 
-    **Adapt this file to provide a suitable template for your custom format**
+## Ações formativas de extensão
 
-Other files
+As ações de extensão previstas incluem a realização de oficinas e minicursos abertos à comunidade interna, com o objetivo de difundir conceitos de BPM, diretrizes institucionais e boas práticas de mapeamento e validação de processos. Além disso, está prevista a produção de guias e tutoriais, em linguagem acessível e com base na experiência acumulada ao longo do projeto, destinados a apoiar futuras iniciativas de mapeamento nas diferentes unidades.
 
-  ~ Other files are needed by the template and are usually user provided - they are not part of the custom format. 
+# Resultados esperados
 
-    Here `bibliography.bib` is here to demo the usage of the bst file from the custom format.
+Os resultados esperados incluem a obtenção de um inventário consolidado e atualizado dos processos institucionais mapeados, com indicação clara de sua situação (validados, em revisão ou em elaboração). Espera-se, ainda, a ampliação do número de processos com modelos _as-is_ e _to-be_, em conformidade com a notação BPMN e as diretrizes institucionais, devidamente validados e publicados no repositório institucional. Também se almeja a classificação sistemática dos processos por natureza e por macroprocesso, a fim de facilitar a gestão estratégica, o planejamento e o monitoramento institucionais. Por fim, prevê-se a formação prática de discentes e servidores em gestão de processos, fortalecendo a cultura institucional de melhoria contínua e de governança por processos, em alinhamento com o ODS 16.
 
-    **Remove this file and provide a suitable one for your template**
+# Produtos esperados
 
-{{< pagebreak >}}
+Os produtos esperados incluem a disponibilização, em repositório institucional, de um conjunto de processos mapeados, atualizados e validados, com modelos _as-is_ e _to-be_ acessíveis à comunidade. Prevê-se também a formação de um grupo de discentes e servidores com competência prática na gestão de processos de governança institucional. Ademais, será produzido material didático, na forma de cartilhas, guias, tutoriais e apresentações, sobre processos institucionais e o ODS 16, a ser disponibilizado à comunidade. Espera-se, por fim, contribuir para as metas dos ODS 16.6 e 16.7, ao desenvolver instituições mais eficazes, responsáveis e transparentes e ao favorecer uma tomada de decisão mais participativa e baseada em processos claros.
 
-## Checklist: Creating a custom format
+# Coordenação
 
-Here is the checklist to help you know what to modify:
+A coordenação será dividida entre os autores da seguinte forma: a equipe de coordenadores será responsável pela definição dos macroprocessos de negócio do Cefet/RJ, pelo estabelecimento das prioridades das atividades e pelo acompanhamento geral da execução do projeto. O professor Diego Carvalho atuará como coordenador-geral, respondendo pela interlocução com as seções administrativas do Cefet/RJ, pelo alinhamento institucional das ações e pela integração dos resultados às rotinas de gestão. A professora Paula Michelle Purcidonio ficará responsável pela articulação com o Departamento de Desenvolvimento Institucional, acompanhando o cumprimento dos objetivos específicos, apoiando a aplicação das diretrizes de mapeamento e validação e zelando pela qualidade técnica dos produtos gerados. A professora Maria Clara Lippi será responsável pela coordenação dos grupos de discentes, organizando os times de trabalho, orientando as atividades de levantamento, mapeamento e validação dos processos e promovendo a formação prática dos estudantes ao longo do desenvolvimento do projeto.
 
-- Read the resources mentioned at the top,
-- Use this template repo to create a new repository for your format (Click on "Use this template" to create new github repo)
-- Once you are acquainted with the content, remove the resources that are there only as example (see above)
-- Update README by replacing `aft` and `Article Format Template` mentions for your journal format
-- Keep only the template partials that you need to tweak, and add custom ones if needed
-- Add any Lua filters for shortcodes and other that would be useful to create the expected output format
-- Add any external resource your format will need, and that should be part of the extension format that will be downloaded,
-- Check `_extension.yml` is updated correctly
-- Modify the skeleton `template.qmd` to your format and add any required resources to be downloaded to user.
-- Check `.quartoignore` is updated which everything that should not be downloaded.
-- Publish a demo of you format to github pages of the repo by using `quarto publish` command 
 
-## Demo of some features found in this demo journal template
+# Fases de projeto
 
-### Shortcode demo {#sec-shortcode}
+O projeto está estruturado em três fases interdependentes, denominadas A, B e C. Elas são organizadas de modo a garantir a aderência às diretrizes de mapeamento e validação de processos, bem como a consolidação dos resultados ao longo do tempo.
 
-PDF are rendered using {{< latex >}} but it is best if one can use a Markdown syntax for cross format support.
 
-`{{< latex >}}` used in source is a shortcode syntax where the shortcode is included in the extension folder `_extensions`
+A primeira fase (fase A) corresponde à definição dos macroprocessos de negócio e dos respectivos escopos, compreendendo a identificação dos processos prioritários, de seus limites, de suas interfaces e das unidades envolvidas, bem como a indicação formal dos proprietários dos processos e dos especialistas de domínio.
 
-### Code chunk {#sec-chunks}
 
-This format hide chunks by default as option has been set in `_extension.yml` file.
+Na segunda fase (fase B), desenvolve-se a validação sistemática do trabalho realizado no primeiro levantamento de processos de negócio. O objetivo é contemplar a verificação da qualidade sintática, semântica e pragmática dos modelos, a participação de proprietários e especialistas e a emissão de registros formais de validação.
 
-```{r}
-#| prompt: true
-# Loading some data but this chunk won't be shown.
-data("quine", package = "MASS")
-```
+Por fim, a terceira fase (fase C) concentra-se na revisão e atualização dos processos mapeados em anos anteriores que demandem ajustes em função de mudanças organizacionais, normativas ou tecnológicas, bem como no mapeamento e na validação dos novos processos identificados, assegurando a continuidade do ciclo de melhoria e a manutenção de um repositório institucional confiável e atualizado.
 
-But you can set `echo` option to `true` locally in the chunk
+# Recursos humanos necessários
 
-```{r}
-#| echo: true
-m_pois <- glm(Days ~ (Eth + Sex + Age + Lrn)^2, data = quine, family = poisson)
-summary(m_pois)
-```
+Na @tbl-tabela apresentamos os recursos humanos necessários para a execução do projeto.
 
-### Text color {#sec-summary}
+|Fase | duração | discentes | horas totais | multicampi |
+|:---:|-----------|:---------:|--------------|:----------:|
+|  A  | 5 semanas | 2 | 150 horas | não|
+|  B  | 8 semanas | 6 | 720 horas | sim|
+|  C  | 8 semanas | 6 | 720 horas | sim|
 
-Our format makes applying color on inline text possible using the `[content]{color=<name>}` syntax. Let's see an example.
+: Tabela de Recursos Humanos do Projeto de Mapeamento {#tbl-tabela .striped .hover}
 
-Here we are using a special feature of our format which is the coloring because [pink is a **nice** color]{color=mypink}.
+# Conclusão
 
-This is possible thanks to the Lua Filter included in the custom extension format.
+Este projeto de extensão propõe uma resposta estruturada e contínua às lacunas identificadas no mapeamento, na validação e na classificação dos processos institucionais do Cefet/RJ, articulando diretamente a gestão por processos às diretrizes internas e às metas de governança previstas no ODS 16. Ao constituir uma equipe dedicada, operar com um inventário consolidado e adotar metodologias formais de validação sintática, semântica e pragmática, a iniciativa busca não apenas atualizar modelos e repositórios, mas também fortalecer a capacidade institucional de planejar, monitorar e prestar contas de forma transparente e baseada em evidências.
 
-### Using references {.unnumbered}
+A estrutura em fases interdependentes (definição de macroprocessos, validação sistemática e revisão contínua) assegura que o esforço de mapeamento não se limite a uma ação pontual, mas se consolide como um ciclo permanente de melhoria, capaz de absorver mudanças organizacionais, normativas e tecnológicas ao longo do tempo. Nesse percurso, as ações formativas e a participação de discentes e servidores ampliam o alcance do projeto, promovendo a difusão de competências em BPM e BPMN e contribuindo para a formação de uma cultura institucional orientada a processos.
 
-I did not read this book [@CameronTrivedi2013] but it must be interesting. 
-
-Differences between `aft-html` and `aft-pdf`: 
-
-* For the HTML format, we are using Pandoc citeproc to include the bibliography. Here `reference-section-title` controls the title for the chapter that will be used.
-* For the PDF format, `natbib` is used by default and the bibliography is included with a title by the LaTeX template. 
+Ao final, espera-se que os produtos gerados — modelos as-is e to-be validados, cadeia de valor institucional explicitada, processos classificados por natureza e macroprocesso e materiais didáticos disponibilizados em repositório institucional — se traduzam em serviços mais claros, previsíveis e equitativos para a comunidade acadêmica e para a sociedade. Dessa forma, o projeto reforça o papel do Cefet/RJ como instituição pública comprometida com a eficácia, a responsabilidade e a transparência, ao mesmo tempo em que cria condições para uma tomada de decisão mais participativa e informada, em consonância com as metas dos ODS 16.6 e 16.7.

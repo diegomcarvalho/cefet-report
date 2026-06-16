@@ -1,4 +1,6 @@
-# Article Format Template (AFT)
+# Relatório de Pesquisa
+
+Primeira versão de teste. Existe um bug para uma única coluna. Mas, já é bastante útil para o uso diário.
 
 <!-- REMOVE THIS IN YOUR FORMAT TEMPLATE -->
 > Template for creating a new journal article format for Quarto. 

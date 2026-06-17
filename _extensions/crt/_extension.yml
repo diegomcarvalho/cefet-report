@@ -29,7 +29,6 @@ contributes:
         - FontWeight=Regular
       sansfont: Roboto
       monofont: Noto Sans Mono
-      monofontfontoptions:
       toc: true
       toc-title: Sumário
       toc-depth: 1
@@ -62,6 +61,11 @@ contributes:
       # define default configuration for the html version of your format
       number-sections: true
       toc: true
+      mainfont: Sofia Sans Condensed
+      mainfontoptions:
+        - FontWeight=Regular
+      sansfont: Roboto
+      monofont: Noto Sans Mono
       theme: custom.scss
       # Use a CSL file to style (https://www.zotero.org/styles/)
       csl: https://www.zotero.org/styles/journal-of-institutional-and-theoretical-economics

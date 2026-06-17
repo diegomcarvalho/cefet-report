@@ -38,6 +38,9 @@ format:
     classoption: [fleqn, 9pt, twocolumn]
     bibliography: bibliography.bib
   crt-html: default
+website:
+  title: "My Website"
+  site-url: "https://username.github.io/repository-name"
 ---
 
 # Como usar este template

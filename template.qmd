@@ -16,17 +16,17 @@ author:
     orcid: 0000-0003-1592-6327
     affiliations:
       - ref: 1
-      - ref: 2
+      - ref: 3
     current-address: "Avenida Maracanã, 229 - Maracanã, Rio de Janeiro, RJ"
     corresponding: true
     email: diego.carvalho@cefet-rj.br
   - name: Paula Michelle Purcidonio
     affiliations:
-      - ref: 3
       - ref: 2
+      - ref: 3
   - name: Maria Clara Lippi
     affiliations:
-      - ref: 2
+      - ref: 3
 email:
   ref: 1
   stringcontato: "Contato: "
@@ -40,17 +40,17 @@ format:
 affiliations:
   - id: 1
     name: Diretoria de Gestão Estratégica - DIGES/Cefet/RJ
-#    city: Rio de Janeiro
+    city: Rio de Janeiro
 #    state: RJ
 #    country: Brasil
   - id: 2
-    name: Coordenação de Engenharia de Produção - CCEPRO/DEPES/DIREN/Cefet/RJ
-#    city: Rio de Janeiro
+    name: Departamento de Desenvolvimento Institucional - DEDIN/DIGES/Cefet/RJ
+    city: Rio de Janeiro
 #    state: RJ
 #    country: Brasil
   - id: 3
-    name: Departamento de Desenvolvimento Institucional - DEDIN/DIGES/Cefet/RJ
-#    city: Rio de Janeiro
+    name: Coordenação de Engenharia de Produção - CCEPRO/DEPES/DIREN/Cefet/RJ
+    city: Rio de Janeiro
 #    state: RJ
 #    country: Brasil
 ---

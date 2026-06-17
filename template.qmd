@@ -154,6 +154,29 @@ Na @tbl-tabela apresentamos os recursos humanos necessários para a execução d
 
 Este projeto de extensão propõe uma resposta estruturada e contínua às lacunas identificadas no mapeamento, na validação e na classificação dos processos institucionais do Cefet/RJ, articulando diretamente a gestão por processos às diretrizes internas e às metas de governança previstas no ODS 16. Ao constituir uma equipe dedicada, operar com um inventário consolidado e adotar metodologias formais de validação sintática, semântica e pragmática, a iniciativa busca não apenas atualizar modelos e repositórios, mas também fortalecer a capacidade institucional de planejar, monitorar e prestar contas de forma transparente e baseada em evidências.
 
+```{mermaid}
+%%| fig-width: 3.2in
+%%| label: fig-1
+%%| fig-cap: "Scaled Mermaid Diagram"
+%%| fig-align: center
+sequenceDiagram
+  participant Alice
+  participant Bob
+  Alice->>John: Hello John, how are you?
+  loop Healthcheck
+    John->>John: Fight against hypochondria
+  end
+  Note right of John: Rational thoughts <br/>prevail!
+  John-->>Alice: Great!
+  John->>Bob: How about you?
+  Bob-->>John: Jolly good!
+```
+
 A estrutura em fases interdependentes (definição de macroprocessos, validação sistemática e revisão contínua) assegura que o esforço de mapeamento não se limite a uma ação pontual, mas se consolide como um ciclo permanente de melhoria, capaz de absorver mudanças organizacionais, normativas e tecnológicas ao longo do tempo. Nesse percurso, as ações formativas e a participação de discentes e servidores ampliam o alcance do projeto, promovendo a difusão de competências em BPM e BPMN e contribuindo para a formação de uma cultura institucional orientada a processos.
 
 Ao final, espera-se que os produtos gerados — modelos as-is e to-be validados, cadeia de valor institucional explicitada, processos classificados por natureza e macroprocesso e materiais didáticos disponibilizados em repositório institucional — se traduzam em serviços mais claros, previsíveis e equitativos para a comunidade acadêmica e para a sociedade. Dessa forma, o projeto reforça o papel do Cefet/RJ como instituição pública comprometida com a eficácia, a responsabilidade e a transparência, ao mesmo tempo em que cria condições para uma tomada de decisão mais participativa e informada, em consonância com as metas dos ODS 16.6 e 16.7.
+
+
+:::{.callout-note}
+Este projeto faz parte das atividades planejadas para 2026 e está de acordo com o planejamento institucional de longo prazo  do Cefet/RJ.
+:::

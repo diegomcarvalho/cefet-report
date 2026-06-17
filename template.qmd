@@ -1,182 +1,170 @@
 ---
-title: "Mapeamento, Validação e Classificação de Processos Institucionais"
+title: "Relatório Técnico de Exemplo"
 lang: pt
 region: BR
-date: "Fevereiro 2026"
-jornalinfo: "Cefet/RJ, DIGES, PRJ, 2026"
+date: "Junho 2026"
+jornalinfo: "Cefet/RJ, DIGES, Relatório Técnico, 2026"
 admunit: Diretoria de Gestão Estratégica
-abstract: A gestão por processos é um elemento central da governança institucional prevista nas Diretrizes de Mapeamento de Processos do Cefet/RJ, que estabelecem conceitos, hierarquia, responsabilidades e requisitos mínimos para o mapeamento com BPMN, em modelos _as-is_ e _to-be_. A Norma de Mapeamento e Validação complementa esse marco, definindo a equipe mínima, as etapas de validação e os critérios de qualidade sintática, semântica e pragmática para modelos de processos de negócio no Cefet/RJ.
+abstract:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 keywordname: "Palavras-chave"
 keywords:
-  - Mapeamento de processos
-  - Gestão de Processos
-  - Engenharia de Métodos
+  - Lorem ipsum
+  - Gestão institucional
+  - Quarto
+  - Markdown
+  - Mermaid
 author:
   - name: Diego Carvalho
     orcid: 0000-0003-1592-6327
     affiliations:
       - ref: 1
-      - ref: 3
-    current-address: "Avenida Maracanã, 229 - Maracanã, Rio de Janeiro, RJ"
     corresponding: true
     email: diego.carvalho@cefet-rj.br
-  - name: Paula Michelle Purcidonio
+  - name: Equipe Técnica Exemplo
     affiliations:
       - ref: 2
-      - ref: 3
-  - name: Maria Clara Lippi
-    affiliations:
-      - ref: 3
 email:
   ref: 1
   stringcontato: "Contato: "
   emailcontato: diego.carvalho@cefet-rj.br
+affiliations:
+  - id: 1
+    name: Diretoria de Gestão Estratégica - DIGES/Cefet/RJ
+  - id: 2
+    name: Unidade de Apoio Institucional - CEFET/RJ
 format:
   crt-pdf:
     keep-tex: true
     classoption: [fleqn, 9pt, twocolumn]
     bibliography: bibliography.bib
-
-affiliations:
-  - id: 1
-    name: Diretoria de Gestão Estratégica - DIGES/Cefet/RJ
-    city: Rio de Janeiro
-#    state: RJ
-#    country: Brasil
-  - id: 2
-    name: Departamento de Desenvolvimento Institucional - DEDIN/DIGES/Cefet/RJ
-    city: Rio de Janeiro
-#    state: RJ
-#    country: Brasil
-  - id: 3
-    name: Coordenação de Engenharia de Produção - CCEPRO/DEPES/DIREN/Cefet/RJ
-    city: Rio de Janeiro
-#    state: RJ
-#    country: Brasil
+  crt-html: default
 ---
 
-# Justificativa
-A gestão por processos é um elemento central da governança institucional prevista nas Diretrizes de Mapeamento de Processos do Cefet/RJ, que estabelecem conceitos, hierarquia, responsabilidades e requisitos mínimos para o mapeamento com BPMN, em modelos as-is e to-be. A Norma de Mapeamento e Validação complementa esse marco, definindo a equipe mínima, as etapas de validação e os critérios de qualidade sintática, semântica e pragmática para modelos de processos de negócio.
+# Como usar este template
+
+Este arquivo serve como **modelo completo** para relatórios no formato `cefet-report`. Ele demonstra a estrutura mínima do YAML, exemplos de Markdown e exemplos de diagramas Mermaid.
+
+Para renderizar:
+
+```bash
+quarto render template.qmd --to crt-pdf
+quarto render template.qmd --to crt-html
+```
 
 
-Apesar desse arcabouço normativo, a instituição ainda apresenta heterogeneidade no grau de mapeamento de seus macroprocessos e processos, com lacunas de cobertura, desatualização dos fluxos e ausência de classificação sistemática por natureza (finalísticos, de suporte e de gestão), o que dificulta a priorização, a alocação de recursos e a integração entre as unidades. A criação de uma equipe de extensão dedicada ao levantamento, mapeamento, validação e classificação de processos contribui diretamente para o fortalecimento da governança, da transparência procedimental e da melhoria da qualidade dos serviços prestados à comunidade acadêmica e à sociedade.
+## Opções possíveis para `classoption`
+
+| Opção | Efeito |
+|---|---|
+| `twocolumn` | Renderiza em duas colunas |
+| `onecolumn` | Renderiza em uma coluna |
+| `fleqn` | Alinha equações à esquerda |
+| `9pt` | Fonte base menor, útil para documentos compactos |
+| `10pt` | Fonte base intermediária |
+| `11pt` | Fonte base maior |
+| `12pt` | Fonte base ainda maior |
+
+: Tabela de opções para `classoption` {#tbl-tabela}
+
+# Introdução
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.
+
+Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
 
 
+# Exemplo de Markdown
 
-# Objetivo
-## Objetivo geral
+## Ênfase e código
 
-Constituir e consolidar uma equipe de extensão responsável por identificar, mapear, validar e classificar os processos institucionais do Cefet/RJ, em conformidade com as Diretrizes de Mapeamento de Processos e com a Norma de Mapeamento e Validação de Processos de Negócio, ambas aprovadas pelo Comitê de Governança, Desenvolvimento Digital, Controle e Riscos, contribuindo para o fortalecimento da governança e da eficácia institucional.
+Este parágrafo contém **negrito**, *itálico* e `código inline`.
 
-## Objetivos específicos
+## Lista não ordenada
 
-Para atender ao Objetivo Geral deste projeto de extensão, temos as etapas operacionais para a constituição e a consolidação de uma equipe dedicada ao levantamento, mapeamento, validação e classificação de processos institucionais, em estrita conformidade com as Diretrizes de Mapeamento de Processos e com a Norma de Mapeamento e Validação de Processos de Negócio do Cefet/RJ. Nesse contexto, listamos, a seguir, os objetivos específicos.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-- Revisar e sistematizar o inventário de processos existente, identificando lacunas, redundâncias e inconformidades, e utilizá-lo como base para a modelagem da cadeia de valor institucional.
-- Mapear a cadeia de valor atual e a desejada, alinhadas ao planejamento estratégico, de modo a orientar a organização dos macroprocessos e subsidiar decisões sobre a criação, atualização ou descontinuação de processos.
-- Classificar o inventário de processos à luz da cadeia de valor, categorizando-os quanto à natureza (finalísticos, de suporte, de gestão) e posicionando-os na hierarquia institucional de macroprocessos.
-- Priorizar, validar e modelar processos institucionais, realizando mapeamentos _as-is_ e _to-be_ conforme as normas e diretrizes vigentes, com a participação de especialistas e proprietários de processos.
-- Documentar, homologar e disseminar os resultados, incluindo relatórios técnicos, certificados de validação, registros de classificação e ações de capacitação em gestão de processos e em BPMN.
+- Item de exemplo um.
+- Item de exemplo dois.
+- Item de exemplo três.
 
+## Bloco de citação
 
-# Vinculação aos Objetivos de Desenvolvimento Sustentável {toc-title="Vinculação aos ODS"}
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-O projeto está vinculado aos seguintes Objetivos de Desenvolvimento Sustentável.
+## Nota de rodapé
 
-- *ODS principal: ODS 16 – Paz, Justiça e Instituições Eficazes* – O projeto contribui para a meta de "construir instituições eficazes, responsáveis e inclusivas em todos os níveis", ao fortalecer a governança por processos, a clareza das responsabilidades e a transparência dos fluxos internos. Ao garantir modelos de processo validados, documentados e acessíveis, a instituição aprimora sua capacidade de prestar contas e de oferecer serviços mais previsíveis e equitativos à comunidade acadêmica, o que dialoga com a construção de instituições mais íntegras e responsáveis.
-- *ODS complementar (opcional): ODS 9 – Indústria, Inovação e Infraestrutura.* Na medida em que o projeto fomenta a adoção de metodologias de gestão de processos e de infraestrutura de informação mais eficientes, contribui indiretamente para a perspectiva de "desenvolver infraestrutura de qualidade, confiável, sustentável e resiliente", aplicada ao contexto da infraestrutura organizacional e dos processos internos. Caso o edital de extensão permita múltiplas vinculações, essa associação pode ser registrada como secundária.
+Exemplo de nota de rodapé[^1].
 
-# Público-alvo
-
-O projeto apresenta dois públicos-alvo, a saber:
-
-- *Interno*: servidores técnico-administrativos e docentes das diretorias sistêmicas e unidades acadêmicas envolvidas em processos de gestão, ensino, pesquisa e extensão, bem como discentes participantes das ações de extensão.
-- *Externo (indireto)*: comunidade atendida pelos serviços do Cefet/RJ, que se beneficia de processos mais claros, eficientes e transparentes.
-
-# Metodologia resumida
-
-A metodologia empregada é baseada na apresentada em @dumas2013fundamentals.
-
-## Constituição da equipe de mapeamento
-
-A constituição da equipe de mapeamento segue estritamente as disposições da Norma de Mapeamento e Validação de Processos de Negócio, que exige a formação de uma equipe _ad hoc_ para toda atividade de criação, mapeamento e validação de processos. Essa equipe deve ser composta, no mínimo, por um analista de processos — responsável pela modelagem, análise e presidência do grupo — e por especialistas de domínio oriundos das áreas proprietárias do processo, sendo pelo menos um deles da unidade responsável, o que garante conhecimento aprofundado sobre a execução prática das atividades. A indicação dos membros é feita pelo Departamento de Desenvolvimento Institucional, após consulta ao proprietário do processo, assegurando o engajamento das partes interessadas e o alinhamento às responsabilidades definidas nas Diretrizes de Mapeamento de Processos. Essa estrutura promove a integração entre competências técnicas e expertise operacional, facilitando a definição do escopo, a aprovação formal dos modelos validados, a documentação das etapas metodológicas e a submissão dos resultados à homologação institucional.
-
-## Fase 1 – Levantamento e validação de processos já mapeados
-
-As atividades iniciais compreendem a realização de um inventário dos modelos de processos já existentes no repositório institucional, acompanhado de análise de aderência às diretrizes vigentes, considerando a hierarquia de processos, a notação adotada e o atendimento aos requisitos mínimos estabelecidos. Na sequência, será conduzida a validação formal desses modelos, mediante a aplicação das quatro etapas previstas — definição de contexto, coleta de informações, modelagem e garantia de qualidade —, culminando na elaboração do Relatório de Validação e do Certificado de Validação, conforme disposto na norma. Por fim, proceder-se-á à classificação dos processos segundo sua natureza (finalísticos primários, de suporte/apoio ou de gestão) e à vinculação aos respectivos macroprocessos institucionais.
-
-## Fase 2 – Identificação e mapeamento de processos não mapeados ou desatualizados
-
-As atividades previstas incluem o levantamento, junto às unidades, de processos críticos que ainda não possuam modelo ou que apresentem modelos desatualizados, com o devido registro de seu escopo e de seus respectivos proprietários. Em seguida, será realizada a coleta de informações por meio de análise documental, observação direta, entrevistas, workshops colaborativos ou descoberta automatizada, conforme as opções previstas na Norma. A partir desses insumos, proceder-se-á à modelagem _as-is_ em BPMN, seguindo as etapas de identificação de limites, atividades, recursos, fluxo de controle e elementos adicionais, bem como, quando pertinente, à análise e construção de modelos _to-be_, com a definição de indicadores. Por fim, será realizada a validação formal, contemplando as dimensões de qualidade sintática, semântica e pragmática, com emissão de relatório e de certificação, além do registro dos modelos em repositório institucional.
-
-## Ações formativas de extensão
-
-As ações de extensão previstas incluem a realização de oficinas e minicursos abertos à comunidade interna, com o objetivo de difundir conceitos de BPM, diretrizes institucionais e boas práticas de mapeamento e validação de processos. Além disso, está prevista a produção de guias e tutoriais, em linguagem acessível e com base na experiência acumulada ao longo do projeto, destinados a apoiar futuras iniciativas de mapeamento nas diferentes unidades.
-
-# Resultados esperados
-
-Os resultados esperados incluem a obtenção de um inventário consolidado e atualizado dos processos institucionais mapeados, com indicação clara de sua situação (validados, em revisão ou em elaboração). Espera-se, ainda, a ampliação do número de processos com modelos _as-is_ e _to-be_, em conformidade com a notação BPMN e as diretrizes institucionais, devidamente validados e publicados no repositório institucional. Também se almeja a classificação sistemática dos processos por natureza e por macroprocesso, a fim de facilitar a gestão estratégica, o planejamento e o monitoramento institucionais. Por fim, prevê-se a formação prática de discentes e servidores em gestão de processos, fortalecendo a cultura institucional de melhoria contínua e de governança por processos, em alinhamento com o ODS 16.
-
-# Produtos esperados
-
-Os produtos esperados incluem a disponibilização, em repositório institucional, de um conjunto de processos mapeados, atualizados e validados, com modelos _as-is_ e _to-be_ acessíveis à comunidade. Prevê-se também a formação de um grupo de discentes e servidores com competência prática na gestão de processos de governança institucional. Ademais, será produzido material didático, na forma de cartilhas, guias, tutoriais e apresentações, sobre processos institucionais e o ODS 16, a ser disponibilizado à comunidade. Espera-se, por fim, contribuir para as metas dos ODS 16.6 e 16.7, ao desenvolver instituições mais eficazes, responsáveis e transparentes e ao favorecer uma tomada de decisão mais participativa e baseada em processos claros.
-
-# Coordenação
-
-A coordenação será dividida entre os autores da seguinte forma: a equipe de coordenadores será responsável pela definição dos macroprocessos de negócio do Cefet/RJ, pelo estabelecimento das prioridades das atividades e pelo acompanhamento geral da execução do projeto. O professor Diego Carvalho atuará como coordenador-geral, respondendo pela interlocução com as seções administrativas do Cefet/RJ, pelo alinhamento institucional das ações e pela integração dos resultados às rotinas de gestão. A professora Paula Michelle Purcidonio ficará responsável pela articulação com o Departamento de Desenvolvimento Institucional, acompanhando o cumprimento dos objetivos específicos, apoiando a aplicação das diretrizes de mapeamento e validação e zelando pela qualidade técnica dos produtos gerados. A professora Maria Clara Lippi será responsável pela coordenação dos grupos de discentes, organizando os times de trabalho, orientando as atividades de levantamento, mapeamento e validação dos processos e promovendo a formação prática dos estudantes ao longo do desenvolvimento do projeto.
-
-
-# Fases de projeto
-
-O projeto está estruturado em três fases interdependentes, denominadas A, B e C. Elas são organizadas de modo a garantir a aderência às diretrizes de mapeamento e validação de processos, bem como a consolidação dos resultados ao longo do tempo.
-
-
-A primeira fase (fase A) corresponde à definição dos macroprocessos de negócio e dos respectivos escopos, compreendendo a identificação dos processos prioritários, de seus limites, de suas interfaces e das unidades envolvidas, bem como a indicação formal dos proprietários dos processos e dos especialistas de domínio.
-
-
-Na segunda fase (fase B), desenvolve-se a validação sistemática do trabalho realizado no primeiro levantamento de processos de negócio. O objetivo é contemplar a verificação da qualidade sintática, semântica e pragmática dos modelos, a participação de proprietários e especialistas e a emissão de registros formais de validação.
-
-Por fim, a terceira fase (fase C) concentra-se na revisão e atualização dos processos mapeados em anos anteriores que demandem ajustes em função de mudanças organizacionais, normativas ou tecnológicas, bem como no mapeamento e na validação dos novos processos identificados, assegurando a continuidade do ciclo de melhoria e a manutenção de um repositório institucional confiável e atualizado.
-
-# Recursos humanos necessários
-
-Na @tbl-tabela apresentamos os recursos humanos necessários para a execução do projeto.
-
-|Fase | duração | discentes | horas totais | multicampi |
-|:---:|-----------|:---------:|--------------|:----------:|
-|  A  | 5 semanas | 2 | 150 horas | não|
-|  B  | 8 semanas | 6 | 720 horas | sim|
-|  C  | 8 semanas | 6 | 720 horas | sim|
-
-: Tabela de Recursos Humanos do Projeto de Mapeamento {#tbl-tabela .striped .hover}
-
-# Conclusão
-
-Este projeto de extensão propõe uma resposta estruturada e contínua às lacunas identificadas no mapeamento, na validação e na classificação dos processos institucionais do Cefet/RJ, articulando diretamente a gestão por processos às diretrizes internas e às metas de governança previstas no ODS 16. Ao constituir uma equipe dedicada, operar com um inventário consolidado e adotar metodologias formais de validação sintática, semântica e pragmática, a iniciativa busca não apenas atualizar modelos e repositórios, mas também fortalecer a capacidade institucional de planejar, monitorar e prestar contas de forma transparente e baseada em evidências.
+# Diagramas
 
 ```{mermaid}
 %%| fig-width: 3.2in
-%%| label: fig-1
-%%| fig-cap: "Scaled Mermaid Diagram"
-%%| fig-align: center
+%%| label: fig-2
+%%| fig-cap:  Mermaid Diagram"
 sequenceDiagram
-  participant Alice
-  participant Bob
-  Alice->>John: Hello John, how are you?
-  loop Healthcheck
-    John->>John: Fight against hypochondria
-  end
-  Note right of John: Rational thoughts <br/>prevail!
-  John-->>Alice: Great!
-  John->>Bob: How about you?
-  Bob-->>John: Jolly good!
+    participant U as Usuário
+    participant Q as Quarto
+    participant T as Template
+    U->>Q: quarto render template.qmd --to crt-pdf
+    Q->>T: Carrega metadados YAML
+    T-->>Q: Aplica classe relatpesq
+    Q-->>U: Gera PDF final
 ```
 
-A estrutura em fases interdependentes (definição de macroprocessos, validação sistemática e revisão contínua) assegura que o esforço de mapeamento não se limite a uma ação pontual, mas se consolide como um ciclo permanente de melhoria, capaz de absorver mudanças organizacionais, normativas e tecnológicas ao longo do tempo. Nesse percurso, as ações formativas e a participação de discentes e servidores ampliam o alcance do projeto, promovendo a difusão de competências em BPM e BPMN e contribuindo para a formação de uma cultura institucional orientada a processos.
+# Desenvolvimento
 
-Ao final, espera-se que os produtos gerados — modelos as-is e to-be validados, cadeia de valor institucional explicitada, processos classificados por natureza e macroprocesso e materiais didáticos disponibilizados em repositório institucional — se traduzam em serviços mais claros, previsíveis e equitativos para a comunidade acadêmica e para a sociedade. Dessa forma, o projeto reforça o papel do Cefet/RJ como instituição pública comprometida com a eficácia, a responsabilidade e a transparência, ao mesmo tempo em que cria condições para uma tomada de decisão mais participativa e informada, em consonância com as metas dos ODS 16.6 e 16.7.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra.
 
+```python
+import pandas as pd
 
-:::{.callout-note}
-Este projeto faz parte das atividades planejadas para 2026 e está de acordo com o planejamento institucional de longo prazo  do Cefet/RJ.
+df = pd.DataFrame({
+    "secao": ["Introdução", "Metodologia", "Resultados"],
+    "paginas": [2, 3, 4]
+})
+print(df)
+```
+
+Também é possível inserir equações em LaTeX, por exemplo: $f(x) = x^2 + 1$.
+
+# Resultados
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.
+
+## Exemplo de callout
+
+::: {.callout-note}
+## Observação
+Este é um bloco de observação compatível com Quarto.
 :::
+
+## Referência bibliográfica
+
+Uma citação bibliográfica pode ser feita assim: @exemplo2026.
+
+# Significado dos parâmetros YAML
+
+Abaixo está um resumo prático dos principais parâmetros usados neste template:
+
+- `title`: título principal do documento.
+- `lang`: idioma principal do conteúdo.
+- `region`: região/localização usada para convenções tipográficas.
+- `date`: data de emissão ou publicação.
+- `jornalinfo`: texto informativo de cabeçalho/rodapé do formato.
+- `admunit`: unidade administrativa responsável pelo documento.
+- `abstract`: resumo inicial exibido no documento.
+- `keywordname`: rótulo da seção de palavras-chave.
+- `keywords`: lista de palavras-chave.
+- `author`: lista de autores com nome, ORCID, afiliação, e-mail e indicação de autor correspondente.
+- `email`: bloco de contato principal exibido no documento.
+- `affiliations`: cadastro das instituições/unidades referenciadas pelos autores.
+- `format.crt-pdf.keep-tex`: mantém o arquivo `.tex` gerado.
+- `format.crt-pdf.classoption`: opções repassadas à classe LaTeX, como tamanho de fonte e número de colunas.
+- `format.crt-pdf.bibliography`: arquivo BibTeX usado para referências.
+
+
+# Considerações finais
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla.
+
+[^1]: Esta é uma nota de rodapé de exemplo.

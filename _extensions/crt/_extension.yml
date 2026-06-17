@@ -28,9 +28,8 @@ contributes:
       mainfontoptions:
         - FontWeight=Regular
       sansfont: Roboto
-      monofont: Roboto Mono
+      monofont: Noto Sans Mono
       monofontfontoptions:
-        - Color=0019D4
       toc: true
       toc-title: Sumário
       toc-depth: 1

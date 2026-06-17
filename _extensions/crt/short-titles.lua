@@ -11,15 +11,6 @@
 
 traverse = 'topdown'
 
--- this part where we check for memoir class doesn't work as desired
-isMemoir = false
-function Meta(m)
-    local documentclass = pandoc.utils.stringify(m['documentclass'])
-    if documentclass == 'memoir' then
-        isMemoir = true
-    end
-end
-
 function Header(h)
     local divisions =
     {

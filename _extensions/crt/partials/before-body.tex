@@ -1,5 +1,6 @@
-
 \flushbottom % Makes all text pages the same height
 \maketitle % Print the title and abstract box
-\tableofcontents % Print the contents section
+$if(toc-depth)$
+\setcounter{tocdepth}{$toc-depth$}
+$endif$
 \thispagestyle{empty} % Removes page numbering

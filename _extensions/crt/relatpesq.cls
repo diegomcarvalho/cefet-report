@@ -11,7 +11,7 @@
 \RequirePackage{calc}
 \AtEndOfClass{\RequirePackage{microtype}}
 
-\ExecuteOptions{onecolumn}
+\ExecuteOptions{twocolumn}
 \ExecuteOptions{brazil}
 \DeclareOption{twocolumn}{\def\@ncolumn{1}}
 \DeclareOption{onecolumn}{\def\@ncolumn{0}}
@@ -237,9 +237,9 @@
 \colorbox{color2!10}{%
 \parbox{\textwidth-4\fboxsep-2\fboxrule}{%
 \ifx\@Keywords\@empty%
-\textbf{\abstractname}\\\@Abstract%
+\sffamily\textbf{\abstractname}\\\@Abstract%
 \else%
-\textbf{\abstractname}\\\@Abstract\\[4pt]%
+\sffamily\textbf{\abstractname}\\\@Abstract\\[4pt]%
 \textbf{\keywordname}\\\@Keywords%
 \fi%
 }%

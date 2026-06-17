@@ -12,7 +12,6 @@ contributes:
         # You can include here Lua filters from your extension format
         - color-text.lua
         - short-titles.lua
-        - twocolumn-flag.lua
       shortcodes:
         # You can include here Lua filters defining shortcodes from your extension
         - shortcodes.lua
@@ -24,11 +23,11 @@ contributes:
       documentclass: relatpesq
       papersize: a4
       pdf-standard: a-2b
-      pdf-engine: xelatex
+      pdf-engine: lualatex
       mainfont: Sofia Sans Condensed
       mainfontoptions:
-        - FontWeight=Light
-      sansfont: Asap
+        - FontWeight=Regular
+      sansfont: Roboto
       monofont: Roboto Mono
       monofontfontoptions:
         - Color=0019D4
@@ -43,7 +42,7 @@ contributes:
       cite-method: biblatex
       csl: ieee-access.csl
 
-      urlcolor: red
+      urlcolor: blue
       fig-width: 6.5
       fig-height: 4.5
       # This format use a bst file with natbib
@@ -55,6 +54,7 @@ contributes:
         #        - "partials/title.tex"
         - "partials/after-header-includes.latex"
         - "partials/title.tex"
+        - "partials/before-body.tex"
 
       format-resources:
         # Add here the resources required for the PDF rendering

@@ -1,4 +1,3 @@
-
 \JournalInfo{$jornalinfo$}
 \Archive{$admunit$}
 \PaperTitle{$title$}
@@ -19,7 +18,7 @@ $endfor$
 $for(affiliations)$
 \affiliation{\textsuperscript{$it.number$}\textit{$it.name$}}
 $endfor$
-\affiliation{*~\textbf{$email.stringcontato$} $email.emailcontato$} % Corresponding author
+\affiliation{*~\textbf{$email.stringcontato$} \href{$email.emailcontato$}{$email.emailcontato$}} % Corresponding author
 
 \Abstract{$abstract$}
 

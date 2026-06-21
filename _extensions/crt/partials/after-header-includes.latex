@@ -1,26 +1,35 @@
-\JournalInfo{$jornalinfo$}
-\Archive{$admunit$}
-\PaperTitle{$title$}
+\usepackage{import}
+\usepackage{local}
+\usepackage[left=2.5cm,top=2.5cm,bottom=2.5cm,right=2.5cm]{geometry}
 
-\Authors{
-$for(authors)$
-    $it.name.literal$
-    $if(it.orcid)$
-        \orcidlink{$it.orcid$}~%
-    $endif$
-    \textsuperscript{$for(it.affiliations)$$it.ref$$sep$, $endfor$~%
-    $if(it.attributes.corresponding)$
-        ,*~%
-    $endif$}
-$endfor$
+%%%%%%%%%%%%% general document fancy header %%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % Clear existing headers/footers
+\fancyhead[L]{$jornalinfo$} % Chapter on left
+\fancyhead[R]{\thepage}  % Page number on right
+\fancyfoot[L]{$admunit$}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+\fancypagestyle{firstpage}{
+    \fancyhf{}
+    \fancyhead[L]{$jornalinfo$} % Chapter on left
+    \fancyfoot[L]{$admunit$}
 }
 
+\title{$title$}
+
+\author{%
+$for(authors)$
+    \textbf{$it.name.literal$}
+    $if(it.orcid)$\orcidlink{$it.orcid$}$endif$\textcolor{Accent}{\textsuperscript{$for(it.affiliations)$$it.ref$$sep$,$endfor$$if(it.attributes.corresponding)$,*$endif$}}
+$endfor$\\
+{\small
 $for(affiliations)$
-\affiliation{\textsuperscript{$it.number$}\textit{$it.name$}}
+  \textcolor{Accent}{\textsuperscript{$it.number$}$it.name$}\\%
 $endfor$
-\affiliation{*~\textbf{$email.stringcontato$} \href{$email.emailcontato$}{$email.emailcontato$}} % Corresponding author
+\textcolor{Accent}{\textsuperscript{*}~\textbf{$email.stringcontato$} \href{mailto:$email.emailcontato$}{$email.emailcontato$}}%
+}}
 
-\Abstract{$abstract$}
-
-\Keywords{$for(keywords)$$keywords$ - $endfor$}
-\newcommand{\keywordname}{$keywordname$}
+\vspace{0.8cm}

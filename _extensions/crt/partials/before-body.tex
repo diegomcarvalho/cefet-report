@@ -1,6 +1,12 @@
-\flushbottom % Makes all text pages the same height
-\maketitle % Print the title and abstract box
-$if(toc-depth)$
-\setcounter{tocdepth}{$toc-depth$}
-$endif$
-\thispagestyle{empty} % Removes page numbering
+\thispagestyle{firstpage}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abstract
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1cm}
+\section{Abstract}
+
+\noindent
+\textit{\textcolor{Accent}{$abstract$}}

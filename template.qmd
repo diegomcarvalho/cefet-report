@@ -1,46 +1,45 @@
 ---
-title: "Relatório Técnico de Exemplo"
+title: "Template de relatório técnico, 2026"
 lang: pt
 region: BR
-date: "Junho 2026"
-jornalinfo: "Cefet/RJ, DIGES, Relatório Técnico, 2026"
-admunit: Diretoria de Gestão Estratégica
-abstract:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+date: "Agosto 2025"
+jornalinfo: "Cefet/RJ, Relatório Técnico, 2026"
+admunit: "Diretoria de Gestão Estratégica"
+abstract:  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
 keywordname: "Palavras-chave"
 keywords:
-  - Lorem ipsum
-  - Gestão institucional
-  - Quarto
-  - Markdown
-  - Mermaid
+  - "Cefet/RJ"
+  - "Ensino Médio e Técnico"
+  - "Enem"
+  - "Desempenho no ensino"
+  - "Resultado dos alunos"
 author:
-  - name: Diego Carvalho
+  - name: "Diego Carvalho"
     orcid: 0000-0003-1592-6327
     affiliations:
       - ref: 1
-    corresponding: true
-    email: diego.carvalho@cefet-rj.br
-  - name: Equipe Técnica Exemplo
-    affiliations:
       - ref: 2
+    corresponding: true
 email:
   ref: 1
   stringcontato: "Contato: "
-  emailcontato: diego.carvalho@cefet-rj.br
+  emailcontato: "diego.carvalho@cefet-rj.br"
 affiliations:
   - id: 1
-    name: Diretoria de Gestão Estratégica - DIGES/Cefet/RJ
+    name: "Diretoria de Gestão Estratégica - DIGES/Cefet/RJ"
   - id: 2
-    name: Unidade de Apoio Institucional - CEFET/RJ
+    name: "Coordenação de Engenharia de Produção - CCEPRO/DEPES/DIREN/CEFET/RJ"
 format:
   crt-pdf:
     keep-tex: true
-    classoption: [fleqn, 9pt, twocolumn]
     bibliography: bibliography.bib
   crt-html: default
 website:
   title: "My Website"
   site-url: "https://username.github.io/repository-name"
+embed-resources: true
+jupyter: python3
+engine: jupyter
 ---
 
 # Como usar este template

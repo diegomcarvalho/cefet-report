@@ -1,9 +1,9 @@
-# cefet-report
+# cefet-article
 
 [![Quarto](https://img.shields.io/badge/Quarto-%3E%3D1.7.24-blue)](https://quarto.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**cefet-report** é uma extensão Quarto para geração de relatórios de pesquisa e documentos técnico-institucionais no padrão visual do **Cefet/RJ**. O formato é baseado na classe LaTeX `relatpesq`, compilada com LuaLaTeX, e suporta saída em **PDF** (padrão A-2b) e **HTML**.
+**cefet-article** é uma extensão do Quarto para a geração de documentos de pesquisa e técnico-institucionais no padrão visual do **Cefet/RJ**. O formato é baseado na classe LaTeX `extarticle`, compilada com LuaLaTeX, e suporta saída em **PDF** (padrão A-2b) e **HTML**.
 
 ---
 
@@ -24,17 +24,17 @@
 Use o template diretamente para criar um novo projeto:
 
 ```bash
-quarto use template diegomcarvalho/cefet-report
+quarto use template diegomcarvalho/cefet-article
 ```
 
-Isso instala a extensão e cria um arquivo `template.qmd` e `bibliography.bib` como ponto de partida.
+Isso instala a extensão e cria os arquivos `template.qmd` e `bibliography.bib` como ponto de partida.
 
 ### Projeto existente
 
 Para adicionar o formato a um projeto Quarto já existente:
 
 ```bash
-quarto add diegomcarvalho/cefet-report
+quarto add diegomcarvalho/cefet-article
 ```
 
 ---
@@ -58,7 +58,7 @@ quarto render meu-relatorio.qmd
 
 ## Estrutura do YAML (cabeçalho do `.qmd`)
 
-O cabeçalho YAML controla todos os metadados e opções de formatação do documento. Abaixo está a referência completa de cada parâmetro:
+O cabeçalho YAML controla todos os metadados e as opções de formatação do documento. Abaixo está a referência completa de cada parâmetro:
 
 ### Metadados do documento
 
